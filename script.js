@@ -8,6 +8,9 @@ function selectOption(option) {
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
             displayCatHeart(); // Display the cat-heart.gif
+        // Play audio
+        var audio = new Audio('YAY Kids (Celebration) Sound Effect [Free Download].mp3'); // Replace with your actual file name
+        audio.play();
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
@@ -47,7 +50,7 @@ function flashRainbowColors(callback) {
         if (callback) {
             callback();
         }
-    }, 2000); // Flash colors for 2 seconds
+    }, 3000); // Flash colors for 2 seconds
 }
 
 // Function to display the cat.gif initially
@@ -93,6 +96,10 @@ function displayCatHeart() {
         link.style.fontSize = '18px';
         link.style.color = 'blue';
         link.style.textDecoration = 'underline';
+    // Play audio
+    var audio = new Audio('Laufey - Valentine (Official Audio).mp3'); // Replace with your actual file name
+    audio.play();
+    
 
         // Append the link below the cat-heart image
         imageContainer.appendChild(link);
@@ -103,3 +110,4 @@ function displayCatHeart() {
 }
 // Display the cat.gif initially
 displayCat();
+
